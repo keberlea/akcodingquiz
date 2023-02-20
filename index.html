@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Quiz</title>
+
+    </head>
+
+    <body>
+        <header>
+            <div id=highscores data-state=hide>View Highscores</div>
+            <div id=timer>Time Left: 100</div>
+        </header>
+
+        <main>
+            <section id="beginning">
+                <h1>Coding Quiz</h1>
+                <p>Try to complete the quiz before the timer runs out! 
+                The timer decreases by 10 seconds for every incorrect answer.
+                </p>
+                <button id="start">Start</button>
+                <button id="scores-from-start">Scoreboard</button>
+            </section>
+        
+            <div id="quiz">
+                <!-- <h2>Time Left: <span id="timer"></span></h2> -->
+                <div id="questions"></div>
+                <p id="reward"></p>
+            </div>
+        
+            <form id="ending">
+                <h2>Quiz Completed!</h2>
+                <label for="initials">Enter your Initials: </label>
+                <input type="text" id="initials" maxlength="4">
+                <button id="to-scoreboard">Submit</button>
+            </form>
+        
+            <section id="scoreboard">
+                <h2>High Scores</h2>
+                <ul id="scoreList"></ul>
+                <button id="to-start">Back to Start</button>
+            </section>
+
+        </main>
+    </body>
+
+</html>
