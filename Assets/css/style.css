@@ -1,0 +1,14 @@
+:root {
+    --extralight: #ebcdc7;
+    --light: #EBB7AE;
+    --medium: #EE7D69;
+    --tandark: #6B534F;
+    --reddark: #6B382F;
+}
+
+body {
+    background-color: var(--light);
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
