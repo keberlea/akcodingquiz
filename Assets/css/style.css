@@ -6,9 +6,72 @@
     --reddark: #6B382F;
 }
 
+* {
+    color: var(--light);
+}
+
 body {
-    background-color: var(--light);
+    background-color: var(--reddark);
     margin: 0px;
     font-family: 'Roboto Mono', monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+.column {
+    display:flex;
+    flex-flow: wrap column;
+}
+.row {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+header {
+    justify-content: space-between;
+}
+
+main {
+    margin:5vh 5vw;
+    gap: 2em;
+}
+
+#main div {
+    justify-content: center;
+}
+
+header div {
+    background-color: var(--tandark);
+    padding: 10px
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    background-color: var(--medium);
+    padding:10px;
+    max-width: 543px;
+    flex:0 1 65%;
+    align-self:center;
+}
+
+h2 {
+    font-size: 1.3em;
+    flex-basis: 65%;
+    padding:10px;
+    text-align:center;
+    background-color: var(--light);
+}
+
+button {
+    padding: 3% 9%;
+    background-color: var(--medium);
+    border-radius:5px;
+}
+
+button:hover {
+    background-color: #b285f2d0;
+}
+
+button:active {
+    border: var(--tandark 3px solid);
+}
